@@ -1,20 +1,16 @@
 // Напиши функцію filterArray(numbers, value), яка приймає масив чисел (numbers) та значення (value) як параметри. Функція повинна повертати новий масив лише тих чисел із масиву numbers, які більші за значення value.
 
 function filterArray(numbers, value) {
+  let array = [];
 
-    let array = [];
-
-    for (let number of numbers) {
-
-        if (number > value) {
-            array.push(number);
-        }
-
+  for (let number of numbers) {
+    if (number > value) {
+      array.push(number);
     }
+  }
 
-    return array;
+  return array;
 }
-
 
 console.log(filterArray([1, 2, 3, 4, 5], 3)); // [4, 5]
 console.log(filterArray([1, 2, 3, 4, 5], 4)); // [5]
